@@ -66,101 +66,127 @@
 <!-- Main -->
 
 
-<h2>Documentaries</h2>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="table-responsive">
-				<table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
-					<thead>
-						<tr>
-							<th>Section</th>
-							<th>Date Completed</th>
-							<th>Ideas</th>
+<div class = "announcement"><b>Note: </b> In 1665, a young 23 year old Cambridge student decided not to fear the Great Plague of London that killed over 500,000 English people.  Instead he stayed focused on education because he believed that education is the best weapon to defeat all evils. That paid off: the same year he invented calculus to lay the foundation of physics.  I hope that this Coronavirus pandemic will create the next Sir Isaac Newton. <i>~ Rashidul Bari</i>
+</div>
 
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>2.4: Rules for Matrix Operations</td>
-							<td>
-							4/21/20
-							</td>
-							<td>
-							TBD
-							</td>
-						</tr>
-						<tr>
-							<td>2.5: Inverse Matrices</td>
-							<td>
-							TBD
-							</td>
-							<td>
-							TBD
-							</td>
-						</tr>
-						<tr>
-							<td>2.6: Elimination = Factorization: A=LU</td>
-							<td>
-							TBD
-							</td>
-							<td>
-							TBD
-							</td>
-						</tr>
-						<tr>
-							<td>2.7: Transposes and Permutations</td>
-							<td>
-							TBD
-							</td>
-							<td>
-							TBD
-							</td>
-						</tr>
-						<tr>
-						<td>Che</td>
-						<td><a href="https://www.youtube.com/watch?v=4IWrdassoak&t=20s">Che</a></td>
-							<td>
-								Refath recites a poem at Lehman College's Lovinger Theatre, titled Che.  
-							</td>
-						</tr>
-						<tr>
-							<td>Stereotyped</td>
-							<td>
-								<a href="https://www.youtube.com/watch?v=RDFq8x8Qpqw&t=168s">Stereotyped</a>
-							</td>
-							<td>
-								A short film on the Stereotypes people harbor regarding the Bronx.
-							</td>
-						</tr>
-						<tr>
-							<td>Diti: A Mother's Day Tribute</td>
-							<td>
-								<a href="https://www.youtube.com/watch?v=V37tG7FVuS8">Diti: A Mother's Day Tribute</a>
-							</td>
-							<td>
-								In 2008, when I was 7 years old, I casted as a young child performer in a film directed by MMR Gulzar. The film starred Diti, a famous Bengali actress and Azizul Hakim, who were my mom and. 
-							</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							
-							<style>
-								
+<style>
+    .announcement{
+        background-color:red;
+        padding: 20px;
+        color: white;
+        border: 2px darkred solid;
+    }
+</style>
+
+<table>
+  <caption>Remote Learning</caption>
+  <thead>
+    <tr>
+      <th scope="col">Number</th>
+      <th scope="col">Items</th>
+      <th scope="col">Google Slides</th>
+      <th scope="col">Video</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Account"> 1</td>
+      <td data-label="Due Date"><a href="/Prospectus.pdf">Prospectus</a></td>
+      <td data-label="Amount"><a href="BT1.pdf">Slides #1</a></td>
+      <td data-label="Period"> <a href="BT1key.pdf" >Video #1</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+
+<style>body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
 table caption {
-	padding: 0.5em 0;
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
 }
 
-@media screen and (max-width: 767px) {
-	table caption {
-		border-bottom: 1px solid #ddd;
-	}
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
 }
-							</style>
-                
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}</style>
+						
+	
 
 				<!-- Footer -->
 					
